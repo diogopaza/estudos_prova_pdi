@@ -38,4 +38,30 @@ com o auxílio do computador.
 
 </ul>
 
-<h5>Componentes de um Sistema de Processamento de Imagens</h5>
+<h3>Componentes de um Sistema de Processamento de Imagens</h3>
+<h6>Dispositivos de entrada e saída</h6>
+	<ul>
+		<li><p>Esses dispositivos podem ser utilizados para aquisição, armazenamento, processamento, transmissão e exibição de imagens.</p>
+		<p>Os parâmetros de funcionalidade e desempenho dos dispositivos são dependentes, em grande parte das áreas que os utilizam.</p>
+		</li>
+	</ul>
+
+<h2>Como uma imagem digital é formada?</h2>
+<p>Toda imagem digital é uma matriz.</p>
+<p>No caso de imagens preto e branca a imagem é composta por apenas uma matriz de duas dimensões. Já as imagens coloridas são formadas por três matrizes de duas dimensões cada uma representando neste caso o sistema RGB. Portanto cada pixel é formado de uma tupla de 3 inteiros de 8 bits sem sinal no sistema( R,G,B ) sendo que 0,0,0 representa o preto , ( 255, 255, 255) o branco. As cores mais comuns são:
+<ul>
+	<li>Branco - RGB( 255,255,255 )</li>
+	<li>Azul - RGB( 0,0,255 )</li>
+	<li>Vermelho - RGB( 255,0,0 )</li>
+	<li>Verde - RGB( 0,255,0 )</li>
+	<li>Amarelo - RGB( 255,255,0 )</li>
+	<li>Magenta - RGB ( 255,0,255 )</li>
+	<li>Ciano - RGB ( 0,255,255 )</li>
+	<li>Preto - ( 0,0,0 )</li>
+</ul>
+ </p>
+ <p>As imagens coloridas portanto são compostas de 3 matrizes de inteiros sem sinal de 8 bits, a junção das 3 matrizes produz a imagem colorida com capacidade de reprodução de 16,7 milhões de cores, sendo que os 8 bits tem capacidade para 256 valores e elevando a 3 temos 256 elevado a 3 = 16,7 milhões</p>
+
+
+
+
