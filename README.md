@@ -110,6 +110,12 @@ cv2.imshow( "Vermelho", canalVermelho)<br>
 cv2.imshow( "Verde", canalVerde)<br>
 cv2.imshow( "Azul", canalAzul)<br>
 
+<h3>Histogramas e equalização</h3>
+<p>Um histograma é um gráfico de colunas ou linhas que representa a distribuição dos valores de uma imagem, ou seja, 
+a quantidade de pixeis mais claros(próximos de 255) e a quantidade de pixeis mais escuros(próximos de 0)</p>
+<p>Geralmente o eixo X do gráfico mostra o valor( intensidade ) do pixel e no eixo Y é plotada a quantidade de pixels naquela intensidade</p>
+
+
 
 
 
