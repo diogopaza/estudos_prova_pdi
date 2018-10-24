@@ -75,7 +75,58 @@ com o auxílio do computador.
 
 print(b, g, r) #retorna na tela os valores de cada tupla<br>
 
-<hr>>
+<hr>
+<p><strong>Percorrendo linhas e colunas:</strong></p>
+<p>Alterando todos os pixels da imagem</p>
+
+import cv2<br>
+imagem = cv2.imread( "jogador.jpg")<br>
+
+for y in range( 0, imagem.shape[0], 1):  #percorre linhas<br>
+	for x in range(0, imagem.shape[1], 1):  #percorre colunas<br>
+		imagem[y, x] = ( 0, (x*y)%256, 0) <br>
+cv2.imshow( 'output', imagem )
+
+<p><strong>Cortando uma imagem:</strong></p>
+
+<p>Para fazer o recorte de uma imagem é selecionado uma area e armazendo em uma varável:</p>
+
+import cv2<br>
+
+imagem = cv2.imread( 'jogador.jpg')<br>
+recorte = imagem[220:280, 248:304]<br>
+
+cv2.imshow('output', recorte)<br>
+
+<h3>Máscaras</h3>
+<p>Máscara é uma imagem onde cada pixel pode estar "ligado ou "desligado", ou seja,a máscara posui pixels pretos e brancos apenas. Exemplo:  </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
