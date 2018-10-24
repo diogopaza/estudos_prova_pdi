@@ -98,8 +98,22 @@ recorte = imagem[220:280, 248:304]<br>
 
 cv2.imshow('output', recorte)<br>
 
-<h3>Máscaras</h3>
-<p>Máscara é uma imagem onde cada pixel pode estar "ligado ou "desligado", ou seja,a máscara posui pixels pretos e brancos apenas. Exemplo:  </p>
+<h2>Sistema de cores</h2>
+<p>O sistema RGB possui 3 canais, um para cada cor. Existem funções do OpenCV que permitem separar e visualizar esses canais individualmente.Exemplo:</p>
+
+import cv2
+
+img = cv2.imread("jogador.jpg")<br>
+(canalAzul, canalVerde, canalVermelho) = cv2.split( img )
+
+cv2.imshow( "Vermelho", canalVermelho)
+cv2.imshow( "Verde", canalVerde)
+cv2.imshow( "Azul", canalAzul)
+
+
+
+
+
 
 
 
