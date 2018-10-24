@@ -61,6 +61,22 @@ com o auxílio do computador.
 </ul>
  </p>
  <p>As imagens coloridas portanto são compostas de 3 matrizes de inteiros sem sinal de 8 bits, a junção das 3 matrizes produz a imagem colorida com capacidade de reprodução de 16,7 milhões de cores, sendo que os 8 bits tem capacidade para 256 valores e elevando a 3 temos 256 elevado a 3 = 16,7 milhões</p>
+ <h5>Sistema de coordenadas e manipulação de pixels</h5>
+ <p>No sistema RGB tem-se uma representação de 3 cores, ou seja é possível alterar a cor individualmente para cada pixel, ou seja, manipular individualmente cada pixel da imagem.</p>
+ <p>O pixel mais a esquerda e acima da imagem esta na posição ( 0,0 ) esta na linha 0 e na coluna 0.</p>
+
+ <p><strong>Exemplo usando o OpenCV e Python:</strong></p>
+
+ <p>import cv2 #importa a biblioteca OpenCV</p>
+
+ imagem = cv2.imread( "jogador.jpg") #metódo imread retorna matriz e armazena na memória atraves da variavel #imagem
+
+(b, g, r) = imagem[0,0] = armazena na memória valores das tuplas nesta respectiva ordem<br> 
+
+print(b, g, r) #retorna na tela os valores de cada tupla<br>
+
+<hr>>
+
 
 
 
