@@ -104,11 +104,11 @@ cv2.imshow('output', recorte)<br>
 import cv2
 
 img = cv2.imread("jogador.jpg")<br>
-(canalAzul, canalVerde, canalVermelho) = cv2.split( img )
+(canalAzul, canalVerde, canalVermelho) = cv2.split( img )<br>
 
-cv2.imshow( "Vermelho", canalVermelho)
-cv2.imshow( "Verde", canalVerde)
-cv2.imshow( "Azul", canalAzul)
+cv2.imshow( "Vermelho", canalVermelho)<br>
+cv2.imshow( "Verde", canalVerde)<br>
+cv2.imshow( "Azul", canalAzul)<br>
 
 
 
