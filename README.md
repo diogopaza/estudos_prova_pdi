@@ -99,6 +99,7 @@ recorte = imagem[220:280, 248:304]<br>
 cv2.imshow('output', recorte)<br>
 
 <h2>Sistema de cores</h2>
+<p><strong>Cor é a propriedade que os corpos tem de absorver e refletir luz.</strong></p>
 <p>O sistema RGB possui 3 canais, um para cada cor. Existem funções do OpenCV que permitem separar e visualizar esses canais individualmente.Exemplo:</p>
 
 import cv2
@@ -111,9 +112,28 @@ cv2.imshow( "Verde", canalVerde)<br>
 cv2.imshow( "Azul", canalAzul)<br>
 
 <h3>Histogramas e equalização</h3>
-<p>Um histograma é um gráfico de colunas ou linhas que representa a distribuição dos valores de uma imagem, ou seja, 
+<p>Um histograma é um gráfico de colunas e linhas que representa a distribuição dos valores de uma imagem, ou seja, 
 a quantidade de pixeis mais claros(próximos de 255) e a quantidade de pixeis mais escuros(próximos de 0)</p>
-<p>Geralmente o eixo X do gráfico mostra o valor( intensidade ) do pixel e no eixo Y é plotada a quantidade de pixels naquela intensidade</p>
+<p>A região onde a maioria dos valores se encontra é chamada de "gama tonal". </p>
+<p>Geralmente o eixo X do gráfico mostra o valor( intensidade ) do pixel que varia de 0 a 255, e no eixo Y é plotada a quantidade de pixels naquela intensidade</p>
+<p><strong>Exemplo de código para gerar histograma</strong></p>
+
+from matplotlib import pyplot as plt<br>
+import cv2<br>
+
+img = cv2.imread("jogador.jpg")<br>
+img = cv2.cvtColor( img, cv2.COLOR_BGR2GRAY)<br>
+#Função calcHist para calcular o histograma da imagem
+h = cv2.calcHist( [img], [0], None, [256], [0,256])<br>
+plt.figure()<br>
+plt.title( "Histograma")<br>
+plt.xlabel( "Intensidade")<br>
+plt.ylabel("Quantidade de pixel")<br>
+plt.plot( h )<br>
+plt.xlim([0,256])<br>
+plt.show()<br>
+
+
 
 
 

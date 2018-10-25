@@ -15,5 +15,5 @@ plt.show()
 
 
 
-cv2.imshow("imagem", img)
+
 
