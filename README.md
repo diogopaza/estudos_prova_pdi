@@ -47,7 +47,8 @@ com o auxílio do computador.
 	</ul>
 
 <h2>Como uma imagem digital é formada?</h2>
-<p>Toda imagem digital é uma matriz.</p>
+<p>Uma imagem é uma função bidimensional f( x,y ) onde x e y são coordenadas espaciais e a amplitude f em qualquer par de coordenadas ( x,y ) é chamada intensidade nesse ponto. Quando x, y e os valores de f são quantidades discretas e finitas a imgem é chamada de digital. Uma imagem digital é composta de um número finito de elementos tendo cada ele mento um valor e uma localização.  </p>
+<p>Toda imagem digital é uma matriz. Cada elemento da imagem é chamado de pixel. </p>
 <p>No caso de imagens preto e branca a imagem é composta por apenas uma matriz de duas dimensões. Já as imagens coloridas são formadas por três matrizes de duas dimensões cada uma representando neste caso o sistema RGB. Portanto cada pixel é formado de uma tupla de 3 inteiros de 8 bits sem sinal no sistema( R,G,B ) sendo que 0,0,0 representa o preto , ( 255, 255, 255) o branco. As cores mais comuns são:
 <ul>
 	<li>Branco - RGB( 255,255,255 )</li>
@@ -98,6 +99,9 @@ recorte = imagem[220:280, 248:304]<br>
 
 cv2.imshow('output', recorte)<br>
 
+<h2>Cores primárias</h2>
+<p>Para que a cor seja vista, é necessário que o olho seja atingido por energia eletromágnetica. Vemos um objeto através da luz refletida por ele. Se ele aparece verde á luz do dia é porque, embora seja banhado pela luz branca so sol, ele reflete somente a parte verde da luz para nossos olhos, o restante do espectro é absorvido. A teoria da percepção cromática pelo olho humano baseia-se em hipótese formulada por Young em 1801, que estabelece que os cones( células fotossensíveis que compõe a retina juntamente com os bastonetes )se subdividem em três classe, com diferentes máximos de sensibilidade situados em torno do vermelho, verde e azul. Desta forma, todas as sensações de cor percebidas pelo olho humanno sã na verdade combinações de intensidades dos estímulos recebidos por cada um destes tipos de cones. Estas três cores são denominadas cores primárias aditivas, pois é possível obter qualquer outra cor a partir de uma combinação aditiva de uma delas, em diferentes proporções.   </p>
+
 <h2>Sistema de cores</h2>
 <p><strong>Cor é a propriedade que os corpos tem de absorver e refletir luz.</strong></p>
 <p>O sistema RGB possui 3 canais, um para cada cor. Existem funções do OpenCV que permitem separar e visualizar esses canais individualmente.Exemplo:</p>
@@ -110,6 +114,8 @@ img = cv2.imread("jogador.jpg")<br>
 cv2.imshow( "Vermelho", canalVermelho)<br>
 cv2.imshow( "Verde", canalVerde)<br>
 cv2.imshow( "Azul", canalAzul)<br>
+
+
 
 <h3>Histogramas e equalização</h3>
 <p>Um histograma é um gráfico de colunas e linhas que representa a distribuição dos valores de uma imagem, ou seja, 
