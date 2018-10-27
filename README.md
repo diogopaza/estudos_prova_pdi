@@ -147,6 +147,9 @@ plt.show()<br>
 <p>Esse efeito pode ser criado digitalmente, basta alterar a cor de cada pixel misturando a cor com os pixels ao seu redor. </p>
 <strong>Suavização por cálculoda média</strong>
 
+<h2>Filtragens Espaciais</h2>
+<p>No processo de filtragem digital utiliza-se uma operação de convolução de uma máscara pela imagem digital. Isso equivale a uma operação que passeia sobre toda a imagem original modificando seus valores de acordo com os valores originais da imagem e os pesos da máscara. </p>
+
 
 
 
