@@ -150,9 +150,14 @@ plt.show()<br>
 <h2>Filtragens Espaciais</h2>
 <p>Operam diretamente sobre a matriz de pixels que é a imagem digitalizada, normalmente utilizando operações de convoluções com máscaras. </p>
 <p>No processo de filtragem digital utiliza-se uma operação de convolução de uma máscara pela imagem digital. Isso equivale a uma operação que passeia sobre toda a imagem original modificando seus valores de acordo com os valores originais da imagem e os pesos da máscara. </p>
+<p>Normalmente utiliza-se vizinhança 8 do pixel de referência. </p>
 
-<h2>Filtros Passa-Baixas</h2>
+<h2>Filtros Passa-Baixas ou filtros lineares</h2>
 <p>É um filtro de suavização que reduz as variações nos níveis de cinza que dão aparência de serrilhado nos paamares de intensidade. </p>
+<p>Eliminam as componnetes de alta frequência, que são as bordas e os detalhes finos da imagem, o efeito da filtragem passa-baixas é a suavização da imagem, provocando um leve borramento na mesma. </p>
+
+<h2></h2>
+<p>Os filtros passa-altas atenuam ou elimanam os componentes de baixa frequência e em função disto realçam as bordas e regiões de alto contraste da imagem. </p>
 
 <h2>Filtro de média</h2>
 <p>É a máscara de convolução n X n com todos os seus coeficientes iguais a 1 e depois dividindo-se o valo0r obtido pelo número de pixels da máscara.</p>
