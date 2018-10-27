@@ -133,6 +133,15 @@ plt.plot( h )<br>
 plt.xlim([0,256])<br>
 plt.show()<br>
 
+<h3>Equalização do histograma</h3>
+<p>Calculo matemático sobre a distribuição de pixels para aumentar o contraste da imagem.</p>
+
+<h3>Suavização de imagens</h3>
+<p>A suavização da imagem, também chamada de blur que traduzida significada "borrão", é um efeito em fotografias fora de foco ou desfocadas onde tudo fica embaçado.</p>
+<p>Esse efeito pode ser criado digitalmente, basta alterar a cor de cada pixel misturando a cor com os pixels ao seu redor. </p>
+<strong>Suavização por cálculoda média</strong>
+
+
 
 
 
