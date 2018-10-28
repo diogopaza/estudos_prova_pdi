@@ -106,8 +106,8 @@ cv2.imshow('output', recorte)<br>
 <p><strong>Cor é a propriedade que os corpos tem de absorver e refletir luz.</strong></p>
 <p>O sistema RGB possui 3 canais, um para cada cor. Existem funções do OpenCV que permitem separar e visualizar esses canais individualmente.Exemplo:</p>
 
-<h3>O modelo HSI </h3>
-<p>O modelo HSI permite separar as componentes de matiz, saturação e intensidade da informação de cor em uma imagem, da forma como o ser humano as percebe. Geometricamente o modelo HSI pode ser visto como um sólido, cujo cortes horizontais produzem triangulos, nos quais os vertices contem as cores primarias e o centro corresponde a combinação destas cores em iguais proporções. Esta combinação estara mais proxima do preto ou do branco, conforme a altura em que o corte tenha sido efetuado. A partir da decompisição da imagem colorida nas compinentes adequadas, diversas técnicas existentes para imagens monocromaticas podem ser aplicadas com sucesso a imagens coloridas, com por exemplo a equalização do histograma.  </p>
+<h3>O modelo HSI matiz saturação intensidade</h3>
+<p>O modelo HSI permite separar as componentes de matiz, saturação e intensidade da informação de cor em uma imagem, da forma como o ser humano as percebe. Geometricamente o modelo HSI pode ser visto como um sólido, cujo cortes horizontais produzem triangulos, nos quais os vertices contem as cores primarias e o centro corresponde a combinação destas cores em iguais proporções. Esta combinação estara mais proxima do preto ou do branco, conforme a altura em que o corte tenha sido efetuado. O modelo HSI é muito útil em aplicações que pprocuram reproduzir o mecanismo de percepçãp cromática do olho humano. Também usado para a decomposição da imagem colorida nas componentes adequadas, assim sendo possível aplicar diversas técnicas existentes para imagens monocromaticas em a imagens coloridas, com por exemplo a equalização do histograma.  </p>
 
 
 import cv2
@@ -122,6 +122,7 @@ cv2.imshow( "Azul", canalAzul)<br>
 
 
 <h3>Histogramas </h3>
+<p>Os histogramas também são conhecidos como distribuição de intensidades e Função de Densidade de Probabilidade. </p>
 <p>É uma função que mostra a frequencia com que cada nivel de cinza aparece na imagem</p>
 <p>Um histograma é um gráfico de colunas e linhas que representa a distribuição dos valores de uma imagem, ou seja, 
 a quantidade de pixeis mais claros(próximos de 255) e a quantidade de pixeis mais escuros(próximos de 0)</p>
@@ -172,6 +173,11 @@ plt.show()<br>
 <h2>Filtro da mediana</h2>
 <p>Nesta técnica o nível de cinza do pixel central da janela é substituido pela mediana dos pixels situados em sua vizinhança.</p>
 <p></p>
+
+<h6>Normalizar</h6>
+<p>O comnando normalizar aumenta os valores de brilho da camada de forma que o ponto mais escuro se torne preto e o ponto mais brilhoso se torne o mais brilhoso posível, sem alterar sua tonalidade. </p>
+
+
 
 
 
