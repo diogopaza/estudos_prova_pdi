@@ -104,11 +104,17 @@ cv2.imshow('output', recorte)<br>
 
 <h2>Sistema de cores</h2>
 <p><strong>Cor é a propriedade que os corpos tem de absorver e refletir luz.</strong></p>
-<p>O sistema RGB possui 3 canais, um para cada cor. Existem funções do OpenCV que permitem separar e visualizar esses canais individualmente.Exemplo:</p>
+<p>O sistema RGB possui 3 canais, um para cada cor.</p>
+<p>O modelo pode ser presentado através de um cubo, onde o preto esta na origem, branco no extremo oposto e as cores primárias e secundárias nos outros vértices.</p> 
+<p>Existem funções do OpenCV que permitem separar e visualizar esses canais individualmente.Exemplo:</p>
 
 <h3>O modelo HSI matiz saturação intensidade</h3>
 <p>O modelo HSI permite separar as componentes de matiz, saturação e intensidade da informação de cor em uma imagem, da forma como o ser humano as percebe. Geometricamente o modelo HSI pode ser visto como um sólido, cujo cortes horizontais produzem triangulos, nos quais os vertices contem as cores primarias e o centro corresponde a combinação destas cores em iguais proporções. Esta combinação estara mais proxima do preto ou do branco, conforme a altura em que o corte tenha sido efetuado. O modelo HSI é muito útil em aplicações que pprocuram reproduzir o mecanismo de percepçãp cromática do olho humano. Também usado para a decomposição da imagem colorida nas componentes adequadas, assim sendo possível aplicar diversas técnicas existentes para imagens monocromaticas em a imagens coloridas, com por exemplo a equalização do histograma.  </p>
 
+<h3>Modelo de cor HSV</h3>
+<p>Representado por um cone</p>
+<p>Modelo de cor que define 3 componentes: </p>
+<p>Matiz determina a cor( h ) ou tonalidade, o brilho( value ) determina a intensidade percebida( cor mais clara ou mais escura ) e a saturação ( S ) determina a profundidade ou pureza da cor </p>
 
 import cv2
 
