@@ -117,13 +117,15 @@ cv2.imshow( "Azul", canalAzul)<br>
 
 
 
-<h3>Histogramas e equalização</h3>
+<h3>Histogramas </h3>
+<p>É uma função que mostra a frequencia com que cada nivel de cinza aparece na imagem</p>
 <p>Um histograma é um gráfico de colunas e linhas que representa a distribuição dos valores de uma imagem, ou seja, 
 a quantidade de pixeis mais claros(próximos de 255) e a quantidade de pixeis mais escuros(próximos de 0)</p>
 <p>A região onde a maioria dos valores se encontra é chamada de "gama tonal". </p>
 <p>Geralmente o eixo X do gráfico mostra o valor( intensidade ) do pixel que varia de 0 a 255, e no eixo Y é plotada a quantidade de pixels naquela intensidade</p>
 <p><strong>Exemplo de código para gerar histograma</strong></p>
-
+<h3>Equalização do histograma</h3>
+<p>É a técnica a partir da qual se procura redistribuir os valores de tons de cinza dos pixels de uma imagem. </p>
 from matplotlib import pyplot as plt<br>
 import cv2<br>
 
@@ -159,8 +161,16 @@ plt.show()<br>
 <h2></h2>
 <p>Os filtros passa-altas atenuam ou elimanam os componentes de baixa frequência e em função disto realçam as bordas e regiões de alto contraste da imagem. </p>
 
-<h2>Filtro de média</h2>
-<p>É a máscara de convolução n X n com todos os seus coeficientes iguais a 1 e depois dividindo-se o valo0r obtido pelo número de pixels da máscara.</p>
+<h2>Filtro da média</h2>
+<p>É a máscara de convolução n X n com todos os seus coeficientes iguais a 1 e depois dividindo-se o valor obtido pelo número de pixels da máscara.</p>
+<p>Quanto maior a mascára maior o grau de borramento da imagem resultante. </p>
+
+<h2>Filtro da mediana</h2>
+<p>Nesta técnica o nível de cinza do pixel central da janela é substituido pela mediana dos pixels situados em sua vizinhança.</p>
+<p></p>
+
+
+
 
 
 
