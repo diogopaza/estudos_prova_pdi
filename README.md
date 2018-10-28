@@ -106,6 +106,10 @@ cv2.imshow('output', recorte)<br>
 <p><strong>Cor é a propriedade que os corpos tem de absorver e refletir luz.</strong></p>
 <p>O sistema RGB possui 3 canais, um para cada cor. Existem funções do OpenCV que permitem separar e visualizar esses canais individualmente.Exemplo:</p>
 
+<h3>O modelo HSI </h3>
+<p>O modelo HSI permite separar as componentes de matiz, saturação e intensidade da informação de cor em uma imagem, da forma como o ser humano as percebe. Geometricamente o modelo HSI pode ser visto como um sólido, cujo cortes horizontais produzem triangulos, nos quais os vertices contem as cores primarias e o centro corresponde a combinação destas cores em iguais proporções. Esta combinação estara mais proxima do preto ou do branco, conforme a altura em que o corte tenha sido efetuado. A partir da decompisição da imagem colorida nas compinentes adequadas, diversas técnicas existentes para imagens monocromaticas podem ser aplicadas com sucesso a imagens coloridas, com por exemplo a equalização do histograma.  </p>
+
+
 import cv2
 
 img = cv2.imread("jogador.jpg")<br>
