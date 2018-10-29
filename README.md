@@ -115,6 +115,18 @@ cv2.imshow('output', recorte)<br>
 <p>Representado por um cone</p>
 <p>Modelo de cor que define 3 componentes: </p>
 <p>Matiz determina a cor( h ) ou tonalidade, o brilho( value ) determina a intensidade percebida( cor mais clara ou mais escura ) e a saturação ( S ) determina a profundidade ou pureza da cor </p>
+<p>O matiz descreve o pigmento de uma cor e é medido em graus de 0 a 359., por exemplo 0 é vermelhor; 60 graus amarelo.</p>
+<p>A saturação descreve a pureza da uma cor e é medida em porcentagem de 0 a 100( quanto maior a porcentagem, maior a vivacidade da cor ).</p>
+<p>Value regula o brilho da cor. A cor preto possui brilho zero.   </p>
+<p>Desacoploa totalmente cor e intensidade</p>
+<p>Muito usadi em visão computacional</p>
+
+<h3>Modelo CYMK</h3>
+<p>É formado pelas cores secundária do RGB ciano, magento e amarelo</p>
+<p>Funciona através da absorção de luz, onde as cores são vistas através do que não foi absorvido.</p>
+<p>Utiliza processo subtrativo de cores</p>
+<p>O modelo CYMK é complementar ao RGB, destinado a produtos não emissores de luz</p>
+<p></p>
 
 import cv2
 
@@ -137,6 +149,7 @@ a quantidade de pixeis mais claros(próximos de 255) e a quantidade de pixeis ma
 <p><strong>Exemplo de código para gerar histograma</strong></p>
 <h3>Equalização do histograma</h3>
 <p>É a técnica a partir da qual se procura redistribuir os valores de tons de cinza dos pixels de uma imagem. </p>
+<p>Busca obter uma imagem com melhor contraste.</p>
 from matplotlib import pyplot as plt<br>
 import cv2<br>
 
